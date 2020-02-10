@@ -1,0 +1,44 @@
+MCQ
+1) Which of the following is correct about variable naming conventions in C#?
+A - It should not be a C# keyword.
+B - It must not contain any embedded space or symbol such as? - + ! @ # % ^ & * ( ) [ ] { }
+C - Both of the above.
+D - None of the above.
+
+2) using c # create a program to find the largest of 3 numbers
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Program greater = new Program();
+            greater.largestof3numbers(); 
+        
+        }
+       public  void  largestof3numbers()
+        {
+            int a, b, c;
+            Console.WriteLine("enter the value of a");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the value of b");
+            b = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter the value of c");
+            c = int.Parse(Console.ReadLine());
+            if(a>b && a>c)
+            {
+                Console.WriteLine("the largest of 3 numbers={0}", a);
+            }
+            else if (b> c && b > a)
+            {
+                Console.WriteLine("the largest of 3 numbers={0}", b);
+            }
+            else if (c > a && c > b)
+            {
+                Console.WriteLine("the largest of 3 numbers={0}", c);
+            }
+
+        }
+    }
+}
